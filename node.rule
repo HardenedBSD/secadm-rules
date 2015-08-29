@@ -1,0 +1,7 @@
+{
+	path: "/usr/local/bin/node",
+	features: {
+		pageexec: false,
+		mprotect: false,
+	}
+}
