@@ -1,0 +1,8 @@
+{
+	path: "/usr/local/bin/qemu-system-aarch64"
+	features: {
+		pageexec: false,
+		mprotect: false,
+		aslr: false
+	}
+},
