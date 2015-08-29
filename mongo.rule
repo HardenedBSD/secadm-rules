@@ -1,0 +1,14 @@
+{
+	"path": "/usr/local/bin/mongo"
+	"features": {
+		"mprotect": false,
+		"pageexec": false,
+	},
+},
+	{
+	"path": "/usr/local/bin/mongod"
+	"features": {
+		"mprotect": false,
+		"pageexec": false,
+	},
+},
