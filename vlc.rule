@@ -1,0 +1,7 @@
+{
+	path: "/usr/local/bin/vlc"
+	features: {
+		pageexec: false,
+		mprotect: false,
+	}
+}
