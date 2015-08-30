@@ -5,7 +5,7 @@
 		"pageexec": false,
 	},
 },
-	{
+{
 	"path": "/usr/local/bin/mongod"
 	"features": {
 		"mprotect": false,
