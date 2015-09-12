@@ -1,0 +1,7 @@
+{
+	path: "/usr/local/lib/libreoffice/program/soffice.bin",
+	features: {
+		pageexec: false,
+		mprotect: false,
+	}
+}
