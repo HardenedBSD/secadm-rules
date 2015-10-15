@@ -1,0 +1,7 @@
+{
+	path: "/usr/local/bin/ezquake-glx",
+	features: {
+		pageexec: false,
+		segvguard: false,
+	}
+}
