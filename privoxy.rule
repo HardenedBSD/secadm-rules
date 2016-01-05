@@ -1,6 +1,4 @@
-{
+pax {
 	path: "/usr/local/sbin/privoxy",
-	features: {
 		"shlibrandom" : false,
-	}
 }

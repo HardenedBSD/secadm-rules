@@ -1,35 +1,55 @@
-#!/usr/bin/env csh
-
-set _rules_file = `mktemp`
-set secadm_rules = "/usr/local/etc/secadm.rules"
+#!/usr/bin/env csh 
+#
+# secadm version 0.3+ rule builder
+#
 
 if ( $euser != "root" ) then
-	echo "this script needs root user"
+	echo "fail...this script needs root user"
 	exit 1
 endif
+
+set _rules_file = `mktemp`
 
 if ( ! -f ${_rules_file} ) then
-	echo "fail..."
+	echo "fail...temp file creation failed"
+	exit 1
+endif
+	
+set secadm_rules =  "/usr/local/etc/secadm.rules"
+
+if ( ! -e ${secadm_rules} ) then
+	echo "fail...please create the secadm rule file at ${secadm_rules}"
 	exit 1
 endif
 
+
 cat >> ${_rules_file}<<EOF
-{
-	"applications": [
+secadm {
 EOF
 
 foreach i ( *.rule )
-	set _bin = `sed -n '/path/s/.*\"\(.*\)\",/\1/p' $i`
-	if ( -e ${_bin} ) then
+	#test that every binary in the rule file exists
+	#or secadm will not validate correctly
+	set _test = 0
+	set _bin = `sed -n '/path/s/.*\"\(.*\)\",*/\1/p' $i`
+
+	foreach j ( ${_bin}) 
+		if ( -e ${j} && ! -l ${j} ) then
+			echo "added ${j} rule to ${secadm_rules}"
+		else
+			echo "skipped ${j}, program does not exists on the system or is a link to another program"
+			set _test = 1
+		endif
+	end
+	if ( ${_test} == 0 ) then
 		sed 's/^/		/g' ${i} >> ${_rules_file}
-		echo "added ${i} rules to ${secadm_rules}"
 	else
-		echo "skipped ${i}, program does not exists on the system"
+		echo "skipped ${i} rule file as some programs do not exist on the system"
 	endif
 end
 
 cat >> ${_rules_file}<<EOF
-	]
+	
 }
 EOF
 
@@ -51,7 +71,13 @@ if ( ${_in} == "yes" ) then
 	chown root:wheel ${secadm_rules}
 	chmod 0500 ${secadm_rules}
 	chflags schg ${secadm_rules}
-	secadm set
+	
+	set _test = `secadm validate ${secadm_rules}`
+	if ($status != 0) then
+		echo "secadm rules saved, but failed validation"
+	else
+		secadm load ${secadm_rules}
+	endif
 endif
 
 rm ${_rules_file}

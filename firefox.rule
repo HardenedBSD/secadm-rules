@@ -1,7 +1,5 @@
-{
+pax {
 	path: "/usr/local/lib/firefox/firefox",
-	features: {
 		"pageexec" : false,
 		"mprotect": false,
-	}
 }

@@ -1,28 +1,20 @@
-{
+pax {
 	"path": "/usr/local/openjdk7/bin/appletviewer",
-	"features": {
 		"mprotect": false,
 		"pageexec": false,
-	},
 },
-{
+pax {
 	"path": "/usr/local/openjdk7/bin/java",
-	"features": {
 		"mprotect": false,
 		"pageexec": false,
-	},
 },
-{
+pax {
 	"path": "/usr/local/openjdk7/bin/javac",
-	"features": {
 		"mprotect": false,
 		"pageexec": false,
-	},
 },
-{
+pax {
 	"path": "/usr/local/openjdk7/jre/bin/java",
-	"features": {
 		"mprotect": false,
 		"pageexec": false,
-	},
 },

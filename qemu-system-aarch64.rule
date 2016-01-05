@@ -1,6 +1,4 @@
-{
+pax {
 	path: "/usr/local/bin/qemu-system-aarch64"
-	features: {
 		map32bit_protect: false
-	}
 },

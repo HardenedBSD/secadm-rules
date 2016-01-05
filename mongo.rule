@@ -1,14 +1,10 @@
-{
-	"path": "/usr/local/bin/mongo"
-	"features": {
+pax {
+	"path": "/usr/local/bin/mongo",
 		"mprotect": false,
 		"pageexec": false,
-	},
 },
-{
-	"path": "/usr/local/bin/mongod"
-	"features": {
+pax {
+	"path": "/usr/local/bin/mongod",
 		"mprotect": false,
 		"pageexec": false,
-	},
 },

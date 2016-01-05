@@ -1,7 +1,5 @@
-{
+pax {
 	path: "/usr/local/bin/kmail",
-	features: {
 		pageexec: false,
 		mprotect: false,
-	}
 }
