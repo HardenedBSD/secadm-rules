@@ -14,8 +14,6 @@ if ( ! -f ${_rules_file} ) then
 endif
 
 cat >> ${_rules_file}<<EOF
-{
-	"applications": [
 EOF
 
 foreach i ( *.rule )
@@ -29,8 +27,6 @@ foreach i ( *.rule )
 end
 
 cat >> ${_rules_file}<<EOF
-	]
-}
 EOF
 
 echo
