@@ -1,7 +1,7 @@
-{
+secadm {
+        pax {
 	path: "/usr/local/bin/vlc",
-	features: {
-		pageexec: false,
-		mprotect: false,
-	}
+        pageexec: false,
+        mprotect: false,
+        }
 }

@@ -1,7 +1,8 @@
-{
+secadm {
+        pax {
 	"path": "/usr/local/openjdk8/bin/appletviewer",
-	"features": {
-		"mprotect": false,
-		"pageexec": false,
-	}
+        pageexec: false,
+        mprotect: false,
+        }
 }
+

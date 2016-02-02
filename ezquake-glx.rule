@@ -1,7 +1,8 @@
-{
+secadm {
+        pax {
 	path: "/usr/local/bin/ezquake-glx",
-	features: {
-		pageexec: false,
-		segvguard: false,
-	}
+        pageexec: false,
+        mprotect: false,
+        }
 }
+

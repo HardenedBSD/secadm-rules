@@ -1,7 +1,7 @@
-{
+secadm {
+        pax {
 	"path": "/usr/local/openjdk8/bin/javac",
-	"features": {
-		"mprotect": false,
-		"pageexec": false,
-	}
+        pageexec: false,
+        mprotect: false,
+        }
 }

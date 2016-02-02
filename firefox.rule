@@ -1,7 +1,8 @@
-{
+secadm {
+        pax {
 	path: "/usr/local/lib/firefox/firefox",
-	features: {
-		"pageexec" : false,
-		"mprotect": false,
-	}
+        pageexec: false,
+        mprotect: false,
+        }
 }
+
