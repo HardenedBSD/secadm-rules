@@ -1,7 +1,0 @@
-secadm {
-	pax {
-		path: "/bin/ls",
-		aslr: false,
-		segvguard: false
-	}
-}
