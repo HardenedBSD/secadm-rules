@@ -1,7 +1,8 @@
-{
+secadm {
+        pax {
 	"path": "/usr/local/openjdk7/bin/java",
-	"features": {
-		"mprotect": false,
-		"pageexec": false,
-	}
+        pageexec: false,
+        mprotect: false,
+        }
 }
+

@@ -1,6 +1,6 @@
-{
+secadm {
+        pax {
 	path: "/usr/local/bin/xpdf",
-	features: {
-		"shlibrandom" : false,
-	}
+	shlibrandom : false,
+        }
 }
