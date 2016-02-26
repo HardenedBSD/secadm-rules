@@ -47,7 +47,7 @@ if ( ${_in} == "yes" ) then
 	chown root:wheel ${secadm_rules}
 	chmod 0500 ${secadm_rules}
 	chflags schg ${secadm_rules}
-	secadm set
+	service secadm restart
 endif
 
 rm ${_rules_file}
