@@ -1,8 +1,5 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/lib/libreoffice/program/soffice.bin",
         pageexec: false,
         mprotect: false,
-        }
 }
-

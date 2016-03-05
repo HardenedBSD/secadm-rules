@@ -1,6 +1,4 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/bin/xpdf",
 	shlibrandom : false,
-        }
 }

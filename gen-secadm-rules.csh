@@ -13,13 +13,14 @@ if ( ! -f ${_rules_file} ) then
 	exit 1
 endif
 
-cat >> ${_rules_file}<<EOF
+cat > ${_rules_file}<<EOF
+secadm {
 EOF
 
 foreach i ( *.rule )
 	set _bin = `sed -n '/path/s/.*\"\(.*\)\",/\1/p' $i`
 	if ( -e ${_bin} ) then
-		sed 's/^/		/g' ${i} >> ${_rules_file}
+		sed -e 's/^/	/g' ${i} >> ${_rules_file}
 		echo "added ${i} rules to ${secadm_rules}"
 	else
 		echo "skipped ${i}, program does not exists on the system"
@@ -27,6 +28,7 @@ foreach i ( *.rule )
 end
 
 cat >> ${_rules_file}<<EOF
+}
 EOF
 
 echo

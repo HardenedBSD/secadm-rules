@@ -1,8 +1,5 @@
-secadm {
-        pax {
-	"path": "/usr/local/openjdk7/bin/javac",
+pax {
+	path: "/usr/local/openjdk7/bin/javac",
         pageexec: false,
         mprotect: false,
-        }
 }
-

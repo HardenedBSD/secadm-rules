@@ -1,7 +1,5 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/share/chromium/chrome",
         pageexec: false,
         mprotect: false,
-        }
 }

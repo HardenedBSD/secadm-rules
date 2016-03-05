@@ -1,8 +1,5 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/lib/firefox/firefox",
         pageexec: false,
         mprotect: false,
-        }
 }
-

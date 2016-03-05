@@ -1,6 +1,4 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/bin/qemu-system-aarch64",
 	map32bit_protect: false
-        }
 }

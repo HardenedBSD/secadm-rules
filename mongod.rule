@@ -1,8 +1,5 @@
-secadm {
-        pax {
-	"path": "/usr/local/bin/mongod",
+pax {
+	path: "/usr/local/bin/mongod",
         pageexec: false,
         mprotect: false,
-        }
 }
-

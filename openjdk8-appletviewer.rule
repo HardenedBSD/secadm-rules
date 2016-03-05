@@ -1,8 +1,5 @@
-secadm {
-        pax {
-	"path": "/usr/local/openjdk8/bin/appletviewer",
+pax {
+	path: "/usr/local/openjdk8/bin/appletviewer",
         pageexec: false,
         mprotect: false,
-        }
 }
-

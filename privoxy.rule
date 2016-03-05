@@ -1,6 +1,4 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/sbin/privoxy",
 	shlibrandom" : false,
-        }
 }

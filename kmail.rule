@@ -1,8 +1,5 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/bin/kmail",
         pageexec: false,
         mprotect: false,
-        }
 }
-

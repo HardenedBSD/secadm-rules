@@ -1,7 +1,5 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/bin/vlc",
         pageexec: false,
         mprotect: false,
-        }
 }
