@@ -1,0 +1,4 @@
+pax {
+	pageexec: false,
+	mprotect: false
+}
