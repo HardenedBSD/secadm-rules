@@ -1,0 +1,11 @@
+pax {
+	path: "/usr/local/bin/openmw",
+	pageexec: false,
+	mprotect: false
+}
+
+pax {
+	path: "/usr/local/bin/dhewm3",
+	pageexec: false,
+	mprotect: false
+}
