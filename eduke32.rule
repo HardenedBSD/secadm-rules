@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/bin/eduke32",
+	pageexec: false,
+	mprotect: false
+}
