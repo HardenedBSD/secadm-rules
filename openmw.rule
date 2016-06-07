@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/bin/openmw",
+	pageexec: false,
+	mprotect: false
+}
