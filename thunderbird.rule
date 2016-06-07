@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/lib/thunderbird/thunderbird",
+	pageexec: false,
+	mprotect: false
+}
