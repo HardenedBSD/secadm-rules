@@ -1,4 +1,4 @@
 pax {
-	path: "/usr/local/bin/xpdf",
+	path: "/usr/local/libexec/xpdf/xpdf",
 	shlibrandom : false,
 }
