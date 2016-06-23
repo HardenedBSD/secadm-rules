@@ -1,0 +1,5 @@
+pax {
+        path: "/usr/local/bin/ioquake3",
+        mprotect: false,
+        pageexec: false,
+}
