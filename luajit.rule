@@ -1,0 +1,4 @@
+pax {
+	path: "/usr/local/bin/luajit-2.0.4",
+        disallow_map32bit: true,
+}
