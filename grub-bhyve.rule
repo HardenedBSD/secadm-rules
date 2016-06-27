@@ -1,8 +1,5 @@
-secadm {
-        pax {
+pax {
 	path: "/usr/local/sbin/grub-bhyve",
         pageexec: false,
         mprotect: false,
-        }
 }
-
