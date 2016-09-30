@@ -1,0 +1,4 @@
+pax {
+        path: "/usr/local/bin/pure-ftpd",
+        aslr: false,
+}
