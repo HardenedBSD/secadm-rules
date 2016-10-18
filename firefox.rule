@@ -3,3 +3,8 @@ pax {
         pageexec: false,
         mprotect: false,
 }
+pax {
+	path: "/usr/local/lib/firefox/plugin-container",
+	pageexec: false,
+	mprotect: false,
+}
