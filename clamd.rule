@@ -3,3 +3,8 @@ pax {
         pageexec: false,
         mprotect: false,
 }
+pax {
+	path: "/usr/local/bin/freshclam",
+        pageexec: false,
+        mprotect: false,
+}
