@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/bin/freshclam",
+        pageexec: false,
+        mprotect: false,
+}
