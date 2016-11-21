@@ -1,5 +1,6 @@
 pax {
 	path: "/usr/local/share/chromium/chrome",
+	shlibrandom : false,
         pageexec: false,
         mprotect: false,
 }
