@@ -1,0 +1,5 @@
+pax {
+        path: "/usr/local/libexec/iortcw/iowolfmp.amd64"
+        pageexec: false,
+        mprotect: false,
+}
