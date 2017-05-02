@@ -1,0 +1,4 @@
+pax {
+	path: "/usr/locaol/sbin/apache24",
+	pageexec: false
+}
