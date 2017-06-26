@@ -1,0 +1,5 @@
+pax {
+        path: "/usr/local/bin/rails",
+        pageexec: false,
+        mprotect: false,
+}
