@@ -1,0 +1,24 @@
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/ghc",
+	mprotect: false,
+},
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/ghc-pkg",
+	mprotect: false,
+},
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/haddock",
+	mprotect: false,
+},
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/hpc",
+	mprotect: false,
+},
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/hsc2hs",
+	mprotect: false,
+},
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/runghc",
+	mprotect: false,
+},
