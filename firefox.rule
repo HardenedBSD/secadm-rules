@@ -1,5 +1,9 @@
 pax {
 	path: "/usr/local/lib/firefox/firefox",
+        mprotect: false,
+},
+pax {
+	path: "/usr/local/lib/firefox/plugin-container",
         pageexec: false,
         mprotect: false,
 }
