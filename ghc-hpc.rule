@@ -1,0 +1,4 @@
+pax {
+	path: "/usr/local/lib/ghc-7.10.2/bin/hpc",
+	mprotect: false,
+}
