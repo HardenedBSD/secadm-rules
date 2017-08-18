@@ -3,6 +3,12 @@
 set _rules_file = `mktemp`
 set secadm_rules = "/usr/local/etc/secadm.rules"
 
+if ( "X$1" == "Xdebug" ) then
+	set debug = 1
+else
+	set debug = 0
+endif
+
 if ( $euser != "root" ) then
 	echo "this script needs root user"
 	exit 1
@@ -19,6 +25,9 @@ EOF
 
 foreach i ( *.rule )
 	set _bin = `sed -n '/path/s/.*\"\(.*\)\",/\1/p' $i`
+	if ( ${debug} == 1 ) then
+		echo "try to add ${i} (bin: ${_bin}) rules to ${secadm_rules}"
+	endif
 	if ( -e ${_bin} ) then
 		sed -e 's/^/	/g' ${i} >> ${_rules_file}
 		echo "added ${i} rules to ${secadm_rules}"
