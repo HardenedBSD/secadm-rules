@@ -1,4 +1,4 @@
 pax {
-	path: "/usr/local/sbin/apache24",
+	path: "/usr/local/sbin/httpd",
 	pageexec: false,
 }
