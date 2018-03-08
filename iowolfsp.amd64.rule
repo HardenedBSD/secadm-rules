@@ -1,5 +1,5 @@
 pax {
-          path: "/usr/local/libexec/iortcw/iowolfsp.amd64",
-          pageexec: false,
-          mprotect: false,
+	path: "/usr/local/libexec/iortcw/iowolfsp.amd64",
+	pageexec: false,
+	mprotect: false,
 }
