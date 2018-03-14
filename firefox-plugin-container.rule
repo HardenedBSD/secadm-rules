@@ -1,5 +1,0 @@
-pax {
-	path: "/usr/local/lib/firefox/plugin-container",
-        pageexec: false,
-        mprotect: false,
-}
