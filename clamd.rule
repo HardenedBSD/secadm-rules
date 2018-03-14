@@ -1,5 +1,0 @@
-pax {
-	path: "/usr/local/sbin/clamd",
-        pageexec: false,
-        mprotect: false,
-}
