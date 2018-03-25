@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/bin/cutegram",
+	pageexec: false,
+	mprotect: false,
+}
