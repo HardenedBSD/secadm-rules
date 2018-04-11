@@ -1,0 +1,5 @@
+pax {
+        "path": "/usr/local/bin/nexcloud",
+        "mprotect": "false",
+        "pageexec": "false"
+}
