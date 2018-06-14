@@ -1,0 +1,5 @@
+pax {
+        path: "/usr/local/bin/python2.7",
+        mprotect: false,
+        pageexec: false
+}
