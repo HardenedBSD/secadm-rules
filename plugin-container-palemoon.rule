@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/lib/palemoon/plugin-container",
+	pageexec: false,
+	mprotect: false,
+}
