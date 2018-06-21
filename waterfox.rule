@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/lib/waterfox/waterfox",
+        mprotect: false,
+	pageexec: false,
+}

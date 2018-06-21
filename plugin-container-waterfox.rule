@@ -1,0 +1,5 @@
+pax {
+	path: "/usr/local/lib/waterfox/plugin-container",
+	pageexec: false,
+	mprotect: false,
+}
