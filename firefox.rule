@@ -2,4 +2,5 @@ pax {
 	path: "/usr/local/lib/firefox/firefox",
         mprotect: false,
 	disallow_map32bit: false,
+	pageexec: false,
 }
