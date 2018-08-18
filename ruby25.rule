@@ -1,5 +1,5 @@
 pax {
         path: "/usr/local/bin/ruby25",
-        mprotect: "false",
-        pageexec: "false",
+        mprotect: false,
+        pageexec: false,
 }
