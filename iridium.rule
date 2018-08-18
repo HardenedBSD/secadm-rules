@@ -1,6 +1,5 @@
 pax {
 	path: "/usr/local/share/iridium/iridium",
-	shlibrandom : false,
 	pageexec: false,
 	mprotect: false,
 }
