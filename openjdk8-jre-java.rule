@@ -1,5 +1,6 @@
 pax {
-	path: "/usr/local/openjdk8/jre/bin/java",
+	path: "/usr/local/openjdk8-jre/bin/java",
         pageexec: false,
         mprotect: false,
 }
+
