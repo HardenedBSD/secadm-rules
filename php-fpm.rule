@@ -1,5 +1,5 @@
 pax {
-	path: "/usr/local/bin/php-fpm",
+	path: "/usr/local/sbin/php-fpm",
 	pageexec: false,
 	mprotect: false,
 	segvguard: false,
